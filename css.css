@@ -61,7 +61,7 @@ body, button, input {
 }
 
 .main {
-  background-color: #fafafa;
+  background-color: #ffffff;
   order: 4;
   flex-grow: 1;
   -webkit-box-flex: 1;
@@ -109,7 +109,7 @@ body, button, input {
 
 .login-box {
   background: #fff;
-  border: 1px solid #e6e6e6;
+  border: 1px solid rgb(219, 219, 219);
   border-radius: 1px;
   margin:0 0 10px;
   padding: 10px 0;
@@ -123,6 +123,7 @@ body, button, input {
 .logo {
   background: cover no-repeat;
   width:175px;
+  height:51px;
   height:auto;
 }
 
@@ -139,7 +140,7 @@ body, button, input {
 }
 
 input {
-  height: 36px;
+  height: 38px;
   border: 1px solid #efefef;
   border-radius: 3px;
   background-color: #fafafa;
@@ -165,17 +166,63 @@ input#name:focus, input#password:focus {
   cursor: pointer;
   width: 100%;
   padding:0 8px; 
-  background: #3897f0;
-  border:1px solid #3897f0;
+  background: #4bb4f8;
+  border:1px solid #4bb4f8;
   color:#fff;
-  border-radius:3px;
+  border-radius:8px;
   font-weight:600;
   font-size: 14px;
-  height: 28px;
+  height: 32px;
   line-height: 26px;
   outline: none;
   white-space: nowrap;
 }
+
+.separator {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #737373;
+  margin-top: 6px;
+  padding: 0 40px;
+  font: inherit;
+  font-size: .8125rem;
+  font-weight: 600;
+}
+
+.separator .line {
+  height: 1px;
+  width: 40%;
+  background-color: #dbdbdb;
+}
+
+.other {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 20px;
+  margin: 20px;
+}
+
+
+.fb-login-btn {
+  margin: 1rem;
+  border: 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #385185;
+  font-weight: 600;
+  background: transparent;
+}
+
+.fb-icon {
+  color: #385185;
+  font-size: 1rem;
+  padding-right: 1px;
+}
+
 
 .forgot, .forgot:active, .forgot:hover, .forgot:visited {
   font-size:12px;
@@ -189,12 +236,13 @@ input#name:focus, input#password:focus {
   text-align:center;
   margin:15px;
   color:#262626;
-  font-size:14px;
+  font-size:14px;;
 }
 
 .text a, .text a:visited, .text a:hover, .text a:active {
-  color:#3897f0;
+  color:#0095f6;
   margin-left:3px;
+  font-weight: 600
 }
 
 /* App Store */
@@ -228,25 +276,25 @@ input#name:focus, input#password:focus {
   background-color: #fafafa;
   order: 5;
   padding: 0 20px;
-  background: #fafafa;
+  background: #ffffff;
 }
 
 .footer-container {
   flex-direction: row;  
   flex-wrap:wrap;
-  background-color: #fafafa;
-  justify-content: space-between;
+  background-color: #ffffff;
+  justify-content: center;
   padding: 38px 0;
   max-width:935px;
   font-size:12px;
-  font-weight:600;
+  font-weight: 400;
   margin:0 auto;
-  text-transform:uppercase;
   width:100%
 }
 
 .footer-nav {
-  max-width:100%;
+  max-width:120%;
+  /* max-width: 236px; */
 }
 
 .footer-nav ul {
@@ -259,15 +307,29 @@ input#name:focus, input#password:focus {
   display: inline-block;
   margin-right: 13px;
   margin-bottom:7px;
+  font-weight: 400;
 }
 
 .footer-nav ul li a {
-  color: #003569;
+  color: #737373;
   text-decoration: none;
 }
 
+footer select {
+  font-size: 12px;
+  color: #737373;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer select {
+  outline: none;
+  border: none;
+  background-color: #ffffff;
+}
+
 .footer span {
-  color:#999;
+  color:#737373;
 }
 
 span.language { 
@@ -333,7 +395,7 @@ span.language {
   .input-box {
     border: 1px solid #efefef;
     border-radius: 3px;
-    height: 36px;
+    height: 38px;
     background: #fafafa;
     position: relative;
   }
